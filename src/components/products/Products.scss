@@ -1,0 +1,33 @@
+@import "../shared/styles/variables";
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__filter {
+    margin-bottom: 2rem;
+    &-input {
+      padding: $small-spacing;
+      border-radius: $small-spacing;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    width: 100%;
+    color: $primary-color;
+    cursor: pointer;
+    &:hover {
+      opacity: 70%;
+    }
+  }
+}

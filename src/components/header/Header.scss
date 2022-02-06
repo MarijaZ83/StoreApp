@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  align-items: center;
+  border-bottom: 2px solid #4ecdc4;
+  margin-bottom: 2rem;
+
+  h1 {
+    cursor: pointer;
+    color: #4ecdc4;
+    &:hover {
+      color: darken(#4ecdc4, 20%);
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      color: #4ecdc4;
+      margin-right: 1rem;
+      cursor: pointer;
+      &:hover {
+        color: darken(#4ecdc4, 20%);
+        text-decoration: none;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.activeRouteClass {
+  text-decoration: "underline";
+  color: "#0d3a37";
+}
