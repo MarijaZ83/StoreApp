@@ -1,0 +1,41 @@
+@import "../shared/styles/variables";
+
+.product {
+  max-width: 300px;
+  height: 600px;
+  overflow: auto;
+  box-shadow: $primary-box-shadow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7px;
+
+  &__info {
+    color: $primary-color;
+  }
+
+  &__image {
+    width: 200px;
+    height: 200px;
+    &:hover {
+      opacity: 75%;
+    }
+  }
+
+  &__bolded {
+    color: rgb(97, 96, 96);
+  }
+
+  &__add {
+    margin-top: $small-spacing;
+    padding: $small-spacing;
+    color: $primary-color;
+    box-shadow: $primary-box-shadow;
+    cursor: pointer;
+    border-radius: 5px;
+    &:hover {
+      background-color: rgb(250, 248, 248);     
+    }
+  }
+}

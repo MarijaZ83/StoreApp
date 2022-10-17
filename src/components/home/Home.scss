@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  &__inscription {
+    margin-top: 5rem;
+    h2 {
+      font-size: 32px;
+      color: #4ecdc4;;
+    }
+    p {
+      color: #4ecdc4;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: darken(#4ecdc4, 20%);
+    }
+  }
+}
